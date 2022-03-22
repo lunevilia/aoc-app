@@ -1,5 +1,5 @@
 path {
-    fill : rgb(185, 185, 185);
+    fill : rgb(214, 214, 214);
     stroke: black;
 }
 path:hover {
@@ -11,7 +11,9 @@ svg {
     height: 500px;
     width: 600px;
 }
-
+.current {
+    padding: 35px;
+}
 .currentDiv {
     display: flex;
     justify-content: space-around;
@@ -22,7 +24,7 @@ svg {
     flex: 1;
     border: 3px solid black;
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 0 15px;
     background: white;
     font-weight: bold;
 }
@@ -38,4 +40,49 @@ svg {
 
 .currentDiv hr {
     width:130px;
+}
+
+.current h2 {
+    text-align: left;
+}
+
+/* MaskGuide.js */
+.maskGuide {
+    padding: 35px;
+}
+
+.maskGuide h2{
+    text-align: left;
+}
+
+.maskGuide h3 {
+    width: 300px;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    border: 4px solid rgb(224, 159, 61);
+    background: white;
+    border-radius: 10px;
+}
+
+.maskDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maskChildDiv {
+    flex: 1;
+    border:4px solid rgb(216, 117, 24);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(255, 253, 232);
+
+}
+
+.maskImg{
+    width: 250px;
+    height: 150px;
+}
+
+.masking4 {
+    margin-top: 30px;
 }

@@ -6,9 +6,11 @@ import ApiCall from './ApiCall';
 const Top = () => {
     let [menuViewState, setMenuViewState] = useState("MenuHidden");
     const location = useLocation()
-    const count = useSelector((state) => state.count);
+    const LeftImgSrc = useSelector((state) => state.LeftImgSrc);
+    const LeftTitle = useSelector((state) => state.LeftTitle);
     const dispatch = useDispatch();
-
+    const ApiStyle = useSelector((state) => state.mainCrtMap);
+    console.log(ApiStyle);
     const menuHiddenChange = () => {
         if (menuViewState === "MenuHidden") {
             setMenuViewState("MenuView");
@@ -28,21 +30,19 @@ const Top = () => {
                 <h3><Link to="/" className='menuHome'>AOC</Link></h3>
                 <button className='menuBtn' onClick={menuHiddenChange}>Menu</button>
                 <Link className='aboutBtn' to="/about">?</Link>
-                <button >현재 URL 확인</button>
-                <p>클릭수 : {count}</p>
-                <button onClick={
-                    () => { dispatch({ type: "ADD" }) }
-                }>+</button>
-                <button onClick={
-                    () => { dispatch({ type: "SUB" }) }
-                }>-</button>
 
-                <ApiCall />
+
+                <div className={ApiStyle} >
+                    <ApiCall />
+                </div>
+
+                <img className='MainImg' src={LeftImgSrc} />
+                <h1>{LeftTitle}</h1>
 
             </div>
             <div className={menuViewState}>
                 <ul className='menuNavbar'>
-                    <li><Link to="/">홈화면으로 이동</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/current">코로나 현황 보기</Link></li>
                     <li><Link to="/prevent">코로나 예방 방법</Link></li>
                     <li><Link to="/guide">코로나 코로나 방역지침</Link></li>

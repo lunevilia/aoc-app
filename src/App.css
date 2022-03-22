@@ -21,8 +21,7 @@
 
 /* Home */
 .home .homeRightMenu {
-  background:rgb(211, 214, 255);
-  height: 230px;
+  height: 300px;
   border: 3px solid white;
   line-height: 200px;
 }
@@ -39,7 +38,50 @@
   padding : 0;
   margin-top: 0;
 }
-
+.homeRightMenu {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.homeRightMenu:nth-child(2) {
+  background-image: url(../public/img/MainMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(3) {
+  background-image: url(../public/img/CurrentMain.jpg);
+  background-position: left top;
+}
+.homeRightMenu:nth-child(4) {
+  background-image: url(../public/img/PreventMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(5) {
+  background-image: url(../public/img/GuideMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(6) {
+  background-image: url(../public/img/SymptomMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(7) {
+  background-image: url(../public/img/VaccineMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(8) {
+  background-image: url(../public/img/ManageMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(9) {
+  background-image: url(../public/img/IsolationMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(10) {
+  background-image: url(../public/img/MaskMain.jpg);
+  background-position: center;
+}
+.homeRightMenu:nth-child(11) {
+  background-image: url(../public/img/HospitalMain.jpg);
+  background-position: center;
+}
 /* TOP */
 .menuHome {
   float: left;
@@ -98,6 +140,16 @@
 
 .menuNavbar {
   list-style:none;
+}
+
+.MainImg {
+  width: 100%;
+}
+.viewCrtMap {
+  display: block;
+}
+.noViewCrtMap {
+  display: none;
 }
 
 /* About */

@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 const Home = () => {
+    const dispatch = useDispatch();
+    dispatch({ type: 'CrtMapState', payload: "viewCrtMap" });
+    dispatch({ type: 'PAGEImg', payload: "" });
+    dispatch({ type: 'PAGE', payload: "Home" });
     return (
         <div className='home'>
-            <h2>홈화면</h2>
+            <h2></h2>
 
-            <div className='homeRightMenu'
-                style="background-image: url(../..images/CurrentMain.jpg); height: 200px; width: 400px; border: 1px solid black;"
-            ><Link to="/">홈화면으로 이동</Link></div>
+            <div className='homeRightMenu'><Link to="/">Home</Link></div>
             <div className='homeRightMenu'><Link to="/current">코로나 현황 보기</Link></div>
             <div className='homeRightMenu'><Link to="/prevent">코로나 예방 방법</Link></div>
             <div className='homeRightMenu'><Link to="/guide">코로나 코로나 방역지침</Link></div>

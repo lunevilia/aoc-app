@@ -8,7 +8,9 @@ export default function reducer(currentState, action) {
             crtgubun: '미선택',
             crtincDec: '미선택',
             crtTotal: '미선택',
-            mainImgSrc: ''
+            LeftImgSrc: '',
+            LeftTitle: "Home",
+            mainCrtMap: "viewCrtMap"
         }     // 기본 state 값 1로 지정
     }
 
@@ -19,12 +21,7 @@ export default function reducer(currentState, action) {
 
     ////////////////////////////////////////////////////
     // 나중에 여기서 state 값 변경 { action type에 따라 }
-    if (action.type === "ADD") {
-        newState.count = '/about';
-    }
-    if (action.type === "SUB") {
-        newState.count = '/';
-    }
+
     if (action.type === "GUBUN") {
         newState.crtgubun = action.payload;
     }
@@ -34,7 +31,15 @@ export default function reducer(currentState, action) {
     if (action.type === "TOTAL") {
         newState.crtTotal = action.payload;
     }
-
+    if (action.type === "PAGE") {
+        newState.LeftTitle = action.payload;
+    }
+    if (action.type === "PAGEImg") {
+        newState.LeftImgSrc = action.payload;
+    }
+    if (action.type === "CrtMapState") {
+        newState.mainCrtMap = action.payload;
+    }
     // 변화시킨 값을 반환
     return newState;
 
