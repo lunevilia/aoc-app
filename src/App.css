@@ -1,38 +1,112 @@
+/* 전체 페이지 규격 설정  */
 .App {
   text-align: center;
+  width: 1536px;
+  margin: 0 auto;
+}
+.leftFlexDiv {
+  position: fixed;
+  width: 768px;
+  height: 100%;
+  background: rgb(255, 252, 229);
+}
+.rightSideDiv {
+  width: 768px;
+  height: 100%;
+  background: rgb(255, 225, 143);
+  float: right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 여기까지가 중요한 베이스 규격 */
+
+/* Home */
+.home .homeRightMenu {
+  background:rgb(211, 214, 255);
+  height: 230px;
+  border: 3px solid white;
+  line-height: 200px;
+}
+.home .homeRightMenu a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  display: block;
+}
+.home {
+  text-align: center;
+  background: #ccc;
+  padding : 0;
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* TOP */
+.menuHome {
+  float: left;
+  margin: 30px;
+  color: black;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menuBtn {
+  float: right;
+  margin: 30px;
+  background: none;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.menuBtn:hover {
+  color:rgb(255, 252, 229);
+  background-color: black;
+}
+.aboutBtn {
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding: 8px;
+  margin: 30px 15px;
+  text-decoration: none;
+  border: 3px solid gray;
+  border-radius: 5px;
+  color: black;
+}
+.aboutBtn:hover {
+  background-color: gray;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.MenuHidden {
+  display: none;
+}
+.MenuView {
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: auto;
+  width: 768px;
+  background: black;
+  opacity: 80%;
+}
+.MenuView a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.MenuView li {
+  margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuNavbar {
+  list-style:none;
 }
+
+/* About */
+.about {
+  text-align: center;
+  height : 100px;
+  line-height: 100px;
+  background: rgb(160, 160, 160);
+  padding : 0;
+  margin-top: 0;
+}
+

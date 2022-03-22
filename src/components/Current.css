@@ -1,0 +1,41 @@
+path {
+    fill : rgb(185, 185, 185);
+    stroke: black;
+}
+path:hover {
+    fill: rgb(247, 139, 139);
+    stroke: black;
+}
+
+svg {
+    height: 500px;
+    width: 600px;
+}
+
+.currentDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.currentDiv > div {
+    flex: 1;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0 20px;
+    background: white;
+    font-weight: bold;
+}
+.currentDiv div:first-child p:not(:first-child) {
+    color: rgb(115, 115, 255);
+    font-size: 25px;
+}
+.currentDiv div:not(:first-child) p:not(:first-child) {
+    color: rgb(255, 124, 115);
+    font-size: 25px;
+}
+
+
+.currentDiv hr {
+    width:130px;
+}
