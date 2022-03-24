@@ -7,12 +7,14 @@ function ApiCall() {
 
     const [data, setData] = useState("");
 
-    const url = "openapi/service/rest/Covid19/getCovid19SidoInfStateJson";
-    const ServiceKey = "d0IOcXop1rDS9AinwOgx5Baoh5igfHAUWyWCtmPWKVoesqPZzwesG9zFDIhopO0n2Bg7ojMH7RkdHfb1%2FdRCsg%3D%3D";
-
+    //const url = "openapi/service/rest/Covid19/getCovid19SidoInfStateJson";
+    //const ServiceKey = "d0IOcXop1rDS9AinwOgx5Baoh5igfHAUWyWCtmPWKVoesqPZzwesG9zFDIhopO0n2Bg7ojMH7RkdHfb1%2FdRCsg%3D%3D";
+    const url = ""
+    const ServiceKey = ""
     const result = axios.get(url + '?ServiceKey=' + ServiceKey);
 
     useEffect(() => {
+
         function getResult() {
             return new Promise((resolve, reject) => {
                 if (result) {
@@ -47,7 +49,6 @@ function ApiCall() {
         getResult();
     }, []);
     setTimeout(console.log(result), 5000);
-    console.log(data)
 
     const covid = data;
     return (

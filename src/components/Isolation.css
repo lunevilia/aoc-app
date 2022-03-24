@@ -1,0 +1,139 @@
+
+.isolation{
+    margin: 0%;
+    text-align: none;
+    background-color: white;
+    text-align: left;
+}
+
+.isolation_head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.isolation_Contents{
+    padding: 10px 30px 0px 70px;
+    float: left;
+    margin-bottom: 60px;
+}
+
+.isolation_Contents_Name{
+   
+    padding-left: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #222;
+    margin-top: 24px;
+}
+
+
+
+.isolation_Contents_Name::before{
+    display: inline-block;
+    content: '';
+    width: 9px;
+    height: 16px;
+    margin-left: -20px;
+    margin-right: 7px;
+    background-color: #405985;
+    border-right: 4px solid #47c1d1;
+
+}
+   
+
+.isolation_Contents_Ul{
+    float:left;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
+.isolation_Contents_Ul > li{
+    margin: 0%;
+    text-align: none;
+    position: relative;
+    padding-left: 16px;
+}
+
+[class^="isolation_Contents_Ul"]>li{
+    padding: 4px 0 4px 0;
+    color: #444;
+}
+
+[class^="isolation_Contents_doubleUl"] >li{
+    padding: 5px;
+    margin-top: 0;
+}
+
+[class^="isolation_Contents_Ul"]{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.redContents{
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 2px 0;
+    margin-top: 8px;
+    color: #dd0000;
+}
+
+
+
+
+.bottom_heading{
+    margin-left: 145px;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    font-size:2.5rem;
+    letter-spacing: normal;
+    float: left;
+}
+
+.bottom{
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.bottom_post{
+    padding: 30px 50px 0px 130px;
+    display: flex;
+}
+.bottom_post a {
+    margin-top: 10px;
+    text-decoration-line:none;
+    transition: 0.25s;
+    color: black;
+    
+    
+}
+
+.phoneImage{
+    width: 250px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.phoneImage_a{
+    float: left;
+    padding-left: 20px;
+}
+.phoneImage_a:hover{
+    opacity:50%;
+}
+.isolation_Link{
+    color: black;
+    
+}
+.isolation_Link:hover{
+    opacity:50%;
+    
+}
+
+hr{
+    margin-left: 100px;
+}

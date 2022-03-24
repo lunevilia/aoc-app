@@ -30,12 +30,12 @@ function App() {
           <Route path="/prevent" element={<Prevent />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/symptom" element={<Symptom />} />
-          <Route path="/vaccine" element={<Vaccine />} />
           <Route path="/manage" element={<Manage />} />
           <Route path="/isolation" element={<Isolation />} />
           <Route path="/maskGuide" element={<MaskGuide />} />
           <Route path="/hospital" element={<Hospital />} />
           <Route path="/about" element={<About />} />
+          <Route path="/vaccine/*" element={<Vaccine />} />
         </Routes>
       </div>
     </div>

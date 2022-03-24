@@ -13,7 +13,7 @@ const Home = () => {
             <div className='homeRightMenu'><Link to="/">Home</Link></div>
             <div className='homeRightMenu'><Link to="/current">코로나 현황 보기</Link></div>
             <div className='homeRightMenu'><Link to="/prevent">코로나 예방 방법</Link></div>
-            <div className='homeRightMenu'><Link to="/guide">코로나 코로나 방역지침</Link></div>
+            <div className='homeRightMenu'><Link to="/guide">코로나 방역지침</Link></div>
             <div className='homeRightMenu'><Link to="/symptom">코로나 증상</Link></div>
             <div className='homeRightMenu'><Link to="/vaccine">코로나 백신</Link></div>
             <div className='homeRightMenu'><Link to="/manage">코로나 확진 후 관리</Link></div>

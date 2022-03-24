@@ -1,3 +1,52 @@
+.MainContent {
+    width: 768px;
+    margin-top: 60px;
+    display:flex;
+    background: rgb(255, 254, 243);
+    padding: 50px 0;
+}
+.MainContent svg {
+    height: 300px;
+    width: 400px;
+}
+.MainContent a {
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+}
+.Leftside-left {
+    width: 384px;
+    text-align: center;
+    margin-left: 10px;
+    border-right: 2px solid rgb(211, 209, 182);
+}
+.Leftside-right {
+    width: 384px;
+    text-align: center;
+    float:right;
+}
+.mainCurrentDiv {
+    width: 100%;
+}
+.mainCurrentDiv p {
+    background-color: white;
+    border: 4px solid  rgb(255, 189, 145);
+    color: rgb(77, 77, 77);
+    border-radius: 10px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.left-main-prevent div:nth-child(5){
+    text-align: right;
+    margin-right: 10px;
+    border-bottom:  2px solid rgb(211, 209, 182);
+}
+.left-main-guide div:nth-child(5) {
+    text-align: right;
+    margin-right: 10px;
+}
 path {
     fill : rgb(214, 214, 214);
     stroke: black;
@@ -11,6 +60,11 @@ svg {
     height: 500px;
     width: 600px;
 }
+
+.currentWrap {
+    border: 8px solid rgb(153, 178, 183);
+    background: white;
+}
 .current {
     padding: 35px;
 }
@@ -22,6 +76,7 @@ svg {
 
 .currentDiv > div {
     flex: 1;
+    width: 200px;
     border: 3px solid black;
     border-radius: 10px;
     margin: 0 15px;
@@ -39,11 +94,16 @@ svg {
 
 
 .currentDiv hr {
-    width:130px;
+    width:100px;
 }
 
 .current h2 {
+    text-align: center;
+}
+
+.MainLeftTitle {
     text-align: left;
+    margin-left: 40px;
 }
 
 /* MaskGuide.js */
@@ -52,14 +112,14 @@ svg {
 }
 
 .maskGuide h2{
-    text-align: left;
+    text-align: center;
 }
 
 .maskGuide h3 {
     width: 300px;
     margin: 30px auto 0 auto;
     padding: 10px;
-    border: 4px solid rgb(224, 159, 61);
+    border: 4px solid rgb(255, 99, 100);
     background: white;
     border-radius: 10px;
 }
@@ -71,10 +131,10 @@ svg {
 
 .maskChildDiv {
     flex: 1;
-    border:4px solid rgb(216, 117, 24);
+    border:4px solid rgb(255, 99, 100);
     border-radius: 10px;
     margin: 20px;
-    background-color: rgb(255, 253, 232);
+    background-color: rgb(255, 244, 242);
 
 }
 
@@ -85,4 +145,9 @@ svg {
 
 .masking4 {
     margin-top: 30px;
+}
+
+.maskGuideWrap {
+    border: 8px solid rgb(255, 120, 120);
+    background: white;
 }

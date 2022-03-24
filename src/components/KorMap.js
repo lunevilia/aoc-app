@@ -9,9 +9,6 @@ const KorMap = (covid) => {
     const gubunData = covid.apiResult.gubun;
     const incDecData = covid.apiResult.incDec;
     const totalData = covid.apiResult.total;
-    console.log(gubunData);
-    console.log(incDecData);
-    console.log(totalData);
 
     if (gubunData !== 'undefined' && gubunData !== null) { }
     if (incDecData !== 'undefined' && incDecData !== null) { }

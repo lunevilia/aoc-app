@@ -1,0 +1,64 @@
+.symptom{
+   text-align: left; 
+   
+}
+
+.wrap{
+    width:80%;
+    margin-left:8%;
+}
+
+.box1{
+    background-color: rgb(229, 235, 235);
+    border: 1px solid rgb(210, 214, 216);
+}
+
+.css2{
+    margin-left: 2%;
+    height: 80px;
+}
+
+.css3{
+    margin-left: 2%;
+}
+
+.box2{
+    background-color: rgb(229, 235, 235);
+    border: 1px solid rgb(210, 214, 216);
+}
+
+
+.img2{
+    margin-left:-30px;
+    width: 70%;
+    height: 200px;
+}
+
+.colorbox{
+    background-color: antiquewhite;
+    height: 60px;
+    line-height: 25px;
+    display: flex;
+    padding-left: 10px;
+    border: 1px solid rgb(185, 181, 245);
+}
+
+li{
+    font-size: 15px;
+}
+
+
+.phoneImage{
+    width: 250px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.phoneImage_a{
+    float: left;
+    padding-left: 20px;
+}
+.phoneImage_a:hover{
+    opacity:50%;
+}

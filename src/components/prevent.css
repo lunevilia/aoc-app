@@ -1,0 +1,47 @@
+.prevent{
+    text-align: left;
+    
+}
+
+.wrap{
+    width:80%;
+    margin-left:8%;
+}
+
+.colorbox{
+    background-color: antiquewhite;
+    height: 60px;
+    line-height: 25px;
+    display: flex;
+    padding-left: 10px;
+    border: 1px solid rgb(185, 181, 245);
+}
+
+.imgbox{
+    width: 200px;
+    height: 130px;
+    padding: 2.3px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+li{
+    margin-top:15px;
+    font-size: 15px;
+}
+
+
+.phoneImage{
+    width: 250px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.phoneImage_a{
+    float: left;
+    padding-left: 20px;
+}
+.phoneImage_a:hover{
+    opacity:50%;
+}

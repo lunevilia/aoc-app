@@ -1,0 +1,23 @@
+#pagination{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#pagination a {
+    margin-left: 20px;
+    color: black;
+    text-decoration-line:none;
+}
+.hs_Map{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+#myMap{
+    width:600px;
+    height:600px;
+    align-Items:center;
+    justify-Content:center;
+    margin-Top:40px;
+}
+.place_name{
+    font-size: large;
+}

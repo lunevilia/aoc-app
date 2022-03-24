@@ -13,7 +13,7 @@
 .rightSideDiv {
   width: 768px;
   height: 100%;
-  background: rgb(255, 225, 143);
+  background: white;
   float: right;
 }
 
@@ -91,12 +91,14 @@
 }
 .menuBtn {
   float: right;
+  width: 80px;
   margin: 30px;
   background: none;
   padding: 10px;
   border: 3px solid black;
   border-radius: 5px;
   font-weight: bold;
+  color: black;
 }
 .menuBtn:hover {
   color:rgb(255, 252, 229);

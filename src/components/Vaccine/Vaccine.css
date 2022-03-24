@@ -1,0 +1,82 @@
+.container{
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 8%;
+}
+.btn_area{
+    height: 53.6px;
+    border-radius: 9px;
+    background-color: whitesmoke;
+}
+.btn_area ul{
+    display: flex;
+    justify-content: space-around;
+    height: 53.6px;
+    height: 100%;
+}
+.Vaccioneli{
+    align-items: center;
+    list-style: none;
+    margin-right: 40px;
+    margin-left: -20px;
+}
+ .link, .vaccine_info_wrap a, .vaccine_info_wrap a:visited{
+	text-decoration: none; 
+    color: #303038; 
+}
+.btn_area a:hover {
+    font-weight: 700;
+    opacity: black;
+}
+.vaccine_info_wrap a:hover{
+    opacity: black;
+}
+.focused{
+    text-decoration: none; 
+    color: rgb(240, 187, 42);
+    font-weight: 700;
+}
+.vaccine_container{
+    padding-left: 5%;
+    margin-bottom: 50px;
+}
+.vaccine_img_box{
+    text-align: center;
+    margin-top: 50px;
+}
+.guide_content{
+    padding: 3%;
+}
+.guide_content span{
+    font-weight: 600;
+    color: rgb(8, 8, 139);
+}
+dt{
+    display: block;
+    float: left;
+    padding: 0 0 6px 6px;
+    width: 90px;
+    line-height: 18px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #1e1e23;
+    font-weight: 600;
+}
+dd {
+    display: block;
+    margin-inline-start: 40px;
+    overflow: hidden;
+    line-height: 18px;
+    padding: 0 0 6px 2px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #303038;
+}
+.source_area{
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+.source_area a, .source_area a:visited{
+    color: black; 
+}
