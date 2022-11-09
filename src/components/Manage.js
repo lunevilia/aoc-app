@@ -2,12 +2,16 @@ import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import './Manage.css'
 import { useDispatch } from 'react-redux';
+import man1_1 from './img/home_treatment.jpg';
+import manage_l from './img/IsolationMain.jpg';
+import manage_l2 from './img/HospitalMain.jpg';
 
+import reImg from './img/ManageMain.jpg';
 const Manage = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/ManageMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "확진 후 관리" });
     return (
         <div className='manage'>
@@ -58,7 +62,7 @@ const Manage = () => {
 
 
                     </p>
-                    <img src='/img/home_treatment.jpg' className='home' alt='home' />
+                    <img src={man1_1} className="home" alt="home" />
                     <h3>생활치료센터 입소치료</h3>
                     <p>
                         무증상·경증인 코로나19 확진자가 거주요인 등에 따라 재택치료가 불가능하면 생활치료센터로 배정된다.
@@ -93,14 +97,14 @@ const Manage = () => {
 
                     <div className="bottom_post">
                         <Link to="/isolation">
-                            <img className="phoneImage" alt="iPhone_01" src="img/IsolationMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={manage_l} />
                             <a className='phoneImage_a'>격리 후 조치</a>
                         </Link>
 
 
 
                         <Link to="/Hospital">
-                            <img className="phoneImage" alt="iPhone_01" src="img/HospitalMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={manage_l2} />
                             <a className='phoneImage_a'>인근 병원 찾기</a>
                         </Link>
                     </div>

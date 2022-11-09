@@ -2,21 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Vaccine/Vaccine.css';
 import { useDispatch } from 'react-redux';
+
+// 코로나 방역지침 이미지 정리
+import gui_l from './img/ManageMain.jpg';
+import gui_l2 from "./img/MaskMain.jpg";
+
+import reImg from './img/GuideMain.jpg';
 const Guide = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/GuideMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "코로나 방역지침" });
     return (
         <div className='guide'>
             <h2>코로나 방역지침</h2>
             <div className='container'>
-                
+
                 <div className='colorbox'>
                     <h3>사회적 거리두기(3.21~4.3)</h3>
                 </div>
-                
+
                 <div className='guide_content'>
 
                     <p>사적 모임 <span>6인 → 8인</span>으로 조정</p>
@@ -72,7 +78,7 @@ const Guide = () => {
                 <div className='guide_content'>
                     <p>동네 병의원에서 신속항원검사를 통해 확진되는 경우 60세 이상·면역저하자 일반관리군으로 관리</p>
                     <p>단, 본인 희망 시 집중관리군으로 전환 가능</p>
-                    
+
                     <br />
 
                     <div className='source_area'>
@@ -80,7 +86,7 @@ const Guide = () => {
                         <a href='http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&brdGubun=' target="_blank">코로나바이러스감염증19 보도자료</a>
                     </div>
                 </div>
-                
+
                 <br /><br /><br />
 
                 <hr />
@@ -93,14 +99,14 @@ const Guide = () => {
 
                         <div className="bottom_post">
                             <Link to="/manage">
-                                <img className="phoneImage" alt="iPhone_01" src="img/ManageMain.jpg" />
-                                <a className='phoneImage_a'>코로나 확진 후 관리</a>
+                                <img className="phoneImage" alt="manage" src={gui_l} />
+                                <a className='phoneImage_a'>코로나 확진 후 관리1</a>
                             </Link>
 
 
 
                             <Link to="/maskGuide">
-                                <img className="phoneImage" alt="iPhone_01" src="img/MaskMain.jpg" />
+                                <img className="phoneImage" alt="iPhone_01" src={gui_l2} />
                                 <a className='phoneImage_a'>마스크 의무 행정 지침</a>
                             </Link>
                         </div>
@@ -113,7 +119,7 @@ const Guide = () => {
 
 
 
-            
+
 
 
 

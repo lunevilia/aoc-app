@@ -14,6 +14,8 @@ const Top = () => {
     const dispatch = useDispatch();
     const ApiStyle = useSelector((state) => state.mainCrtMap);
     console.log(ApiStyle);
+
+
     const menuHiddenChange = () => {
         if (menuViewState === "MenuHidden") {
             setMenuViewState("MenuView");

@@ -3,6 +3,11 @@ import ApiCall from './ApiCall';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Current.css';
+
+import current_l from './img/SymptomMain.jpg';
+import current_l2 from './img/PreventMain.jpg';
+
+import reImg from './img/CurrentMain.jpg';
 const Current = () => {
     const crtgubun = useSelector((state) => state.crtgubun);
     const crtincDec = useSelector((state) => state.crtincDec);
@@ -11,7 +16,7 @@ const Current = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/CurrentMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "코로나 현황 보기" });
 
     return (
@@ -36,14 +41,14 @@ const Current = () => {
 
                 <div className="bottom_post">
                     <Link to="/manage">
-                        <img className="phoneImage" alt="iPhone_01" src="img/SymptomMain.jpg" />
+                        <img className="phoneImage" alt="iPhone_01" src={current_l} />
                         <a className='phoneImage_a'>코로나 증상</a>
                     </Link>
 
 
 
                     <Link to="/isolation">
-                        <img className="phoneImage" alt="iPhone_01" src="img/PreventMain.jpg" />
+                        <img className="phoneImage" alt="iPhone_01" src={current_l2} />
                         <a className='phoneImage_a'>코로나 예방 방법</a>
                     </Link>
                 </div>

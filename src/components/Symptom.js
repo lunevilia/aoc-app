@@ -2,11 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./symptom.css";
 import { useDispatch } from 'react-redux';
+
+// img 파일 정리
+import symptom1_1 from './img/coronavirus-4932607_1920 (1).jpg';
+import symptom1_2 from './img/coronavirus-4904507_1920.jpg';
+import symptom1_3 from './img/covid-19-4982910_1920.jpg';
+import symptom2_1 from './img/covid-19-6882296.jpg';
+import symptom2_2 from './img/coronavirus-4904507_1920.jpg';
+import symptom2_3 from './img/coronavirus-4972480_1920.jpg';
+
+import symptom_l from './img/ManageMain.jpg';
+import symptom_l2 from './img/HospitalMain.jpg';
+import reImg from './img/SymptomMain.jpg';
 const Symptom = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/SymptomMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "코로나19(COVID-19) 증상" });
     return (
         <div className='symptom'>
@@ -18,9 +30,9 @@ const Symptom = () => {
                 <div className='colorbox'>
                     <h3>코로나 바이러스란?</h3>
                 </div>
-                <img className='imgbox' src='/img/coronavirus-4932607_1920 (1).jpg' alt='#'></img>
-                <img className='imgbox' src='/img/coronavirus-4904507_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/covid-19-4982910_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={symptom1_1} alt='#'></img>
+                <img className='imgbox' src={symptom1_2} alt='#'></img>
+                <img className='imgbox' src={symptom1_3} alt='#'></img>
                 <li>
                     코로나 바이러스는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자 크기 &ensp;&ensp;&ensp;
                     27~32kb의 RNA바이러스이다.
@@ -36,9 +48,9 @@ const Symptom = () => {
                 <div className='colorbox'>
                     <h3>코로나 바이러스의 형태</h3>
                 </div>
-                <img className='imgbox' src='/img/covid-19-6882296.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/covid-19-4961257_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/coronavirus-4972480_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={symptom2_1} alt='#'></img>
+                <img className='imgbox' src={symptom2_2} alt='#'></img>
+                <img className='imgbox' src={symptom2_3} alt='#'></img>
                 <li>
                     형태는 코로나 바이러스의 명명과 같이 전자현미경 관찰시 구형
                     <li>외부 스파이크 단백질이 특징적인 크라운형태</li>
@@ -150,14 +162,14 @@ const Symptom = () => {
 
                     <div className="bottom_post">
                         <Link to="/manage">
-                            <img className="phoneImage" alt="iPhone_01" src="img/ManageMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={symptom_l} />
                             <a className='phoneImage_a'>코로나 확진 후 관리</a>
                         </Link>
 
 
 
                         <Link to="/Hospital">
-                            <img className="phoneImage" alt="iPhone_01" src="img/HospitalMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={symptom_l2} />
                             <a className='phoneImage_a'>인근 병원 찾기</a>
                         </Link>
                     </div>

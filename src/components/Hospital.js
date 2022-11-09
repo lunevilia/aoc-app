@@ -4,18 +4,13 @@ import './Hospital.css';
 import LandingPage from '../LandingPage';
 import { useDispatch } from 'react-redux';
 
-
-
-
-
-
-
+import reImg from './img/HospitalMain.jpg';
 
 const Hospital = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/HospitalMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "인근 병원 및 검진소" });
     return (
         <div className='hospital'>

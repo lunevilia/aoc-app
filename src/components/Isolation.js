@@ -3,11 +3,16 @@ import { Link, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState, useRef } from "react";
 import './Isolation.css';
 import { useDispatch } from 'react-redux';
+
+import isol_l from './img/ManageMain.jpg';
+import isol_l2 from './img/HospitalMain.jpg';
+
+import reImg from './img/IsolationMain.jpg';
 const Isolation = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/IsolationMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "격리 후 조치" });
     return (
         <div className='isolation'>
@@ -70,14 +75,14 @@ const Isolation = () => {
 
                     <div className="bottom_post">
                         <Link to="/manage">
-                            <img className="phoneImage" alt="iPhone_01" src="img/ManageMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={isol_l} />
                             <a className='phoneImage_a'>코로나 확진 후 관리</a>
                         </Link>
 
 
 
                         <Link to="/Hospital">
-                            <img className="phoneImage" alt="iPhone_01" src="img/HospitalMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={isol_l2} />
                             <a className='phoneImage_a'>인근 병원 찾기</a>
                         </Link>
                     </div>

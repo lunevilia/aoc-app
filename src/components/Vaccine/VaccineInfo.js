@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import VaccineMenu from "./VaccineMenu";
-
+import vac1_1 from '../img/syringe-5882593_1920.jpg';
 const data = {
     Pfizer: {
         title: '화이자',
@@ -59,17 +59,17 @@ const data = {
     },
 };
 
-function VaccineInfo({activeMenu}) {
+function VaccineInfo({ activeMenu }) {
     const params = useParams();
     const vaccine = data[params.keyword];
 
-    if(!vaccine){
+    if (!vaccine) {
         return (
-        <VaccineMenu>
-            <div className="vaccine_img_box">
-            <img className="phoneImage" alt="iPhone_01" src="img/syringe-5882593_1920.jpg" />
-            </div>
-        </VaccineMenu>
+            <VaccineMenu>
+                <div className="vaccine_img_box">
+                    <img className="phoneImage" alt="iPhone_01" src={vac1_1} />
+                </div>
+            </VaccineMenu>
         );
 
     }
@@ -77,24 +77,24 @@ function VaccineInfo({activeMenu}) {
     return (
         <VaccineMenu activeMenu={params.keyword}>
             <h3>
-               {vaccine.title}
+                {vaccine.title}
             </h3>
             <div className="vaccine_info_wrap">
-                <dt className="normal_title">접종 횟수(간격)</dt> 
-                <dd className="normal_info">{vaccine.inoculation_frequency}</dd> 
-                <dt className="normal_title">플랫폼</dt> 
-                <dd className="normal_info">{vaccine.platform}</dd> 
-                <dt className="normal_title">백신명</dt> 
-                <dd className="normal_info">{vaccine.vaccine_name}</dd> 
-                <dt className="normal_title">연령</dt> 
-                <dd className="normal_info">{vaccine.age}</dd> 
-                <dt className="normal_title">구성</dt> 
-                <dd className="normal_info">{vaccine.composition}</dd> 
-                <dt className="normal_title">접종량 및 방법</dt> 
-                <dd className="normal_info">{vaccine.inoculum}</dd> 
-                <dt className="normal_title">유통</dt> 
-                <dd className="normal_info">{vaccine.distribution}</dd> 
-                <dt className="normal_title">개봉 후 저장</dt> 
+                <dt className="normal_title">접종 횟수(간격)</dt>
+                <dd className="normal_info">{vaccine.inoculation_frequency}</dd>
+                <dt className="normal_title">플랫폼</dt>
+                <dd className="normal_info">{vaccine.platform}</dd>
+                <dt className="normal_title">백신명</dt>
+                <dd className="normal_info">{vaccine.vaccine_name}</dd>
+                <dt className="normal_title">연령</dt>
+                <dd className="normal_info">{vaccine.age}</dd>
+                <dt className="normal_title">구성</dt>
+                <dd className="normal_info">{vaccine.composition}</dd>
+                <dt className="normal_title">접종량 및 방법</dt>
+                <dd className="normal_info">{vaccine.inoculum}</dd>
+                <dt className="normal_title">유통</dt>
+                <dd className="normal_info">{vaccine.distribution}</dd>
+                <dt className="normal_title">개봉 후 저장</dt>
                 <dd className="normal_info">{vaccine.storage}</dd>
             </div>
 

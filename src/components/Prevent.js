@@ -2,11 +2,49 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./prevent.css";
 import { useDispatch } from 'react-redux';
+
+// 예방방법 이미지 정리
+import pre1_1 from './img/vaccine-5926664_1920.jpg';
+import pre1_2 from './img/syringe-5882593_1920.jpg';
+import pre1_3 from './img/medical-5835701_1920.jpg';
+
+import pre2_1 from './img/mask.png';
+import pre2_2 from './img/mask2.jpg';
+import pre2_3 from './img/mask3.jpg';
+
+import pre3_1 from './img/covid-6020235_1920.jpg';
+import pre3_2 from './img/social-distancing-4992164_1920.jpg';
+import pre3_3 from './img/social-4954208_1920.jpg';
+
+import pre4_1 from './img/audience-1866738_1920.jpg';
+import pre4_2 from './img/audience-1853662_1920.jpg';
+import pre4_3 from './img/concert-1129966_1920.jpg';
+
+import pre5_1 from './img/coronavirus-5739918_1920.jpg';
+import pre5_2 from './img/rapid-antigen-test-6961674_1920.jpg';
+import pre5_3 from './img/rapid-antigen-test-6480437_1920.jpg';
+
+import pre6_1 from './img/hand-washing-4818792_1920.jpg';
+import pre6_2 from './img/soap-dispenser-2337697_1920.jpg';
+import pre6_3 from './img/hands-2238235_1920.jpg';
+
+import pre7_1 from './img/hand-disinfection-4954840_1920.jpg';
+import pre7_2 from './img/vacuum-cleaner-268179_1920.jpg';
+import pre7_3 from './img/coronavirus-4982040_1920.jpg';
+
+import pre8_1 from './img/space-center-693251_1920.jpg';
+import pre8_2 from './img/blood-pressure-1584223_1920.jpg';
+import pre8_3 from './img/blood-pressure-monitor-1749577_1920.jpg';
+
+import current_l from './img/ManageMain.jpg';
+import current_l2 from './img/HospitalMain.jpg';
+
+import reImg from './img/PreventMain.jpg';
 const Prevent = () => {
     // Home에서 이동시 모든 페이지에 들어가야 하는 코드
     const dispatch = useDispatch();
     dispatch({ type: 'CrtMapState', payload: "noViewCrtMap" });
-    dispatch({ type: 'PAGEImg', payload: "/img/PreventMain.jpg" });
+    dispatch({ type: 'PAGEImg', payload: reImg });
     dispatch({ type: 'PAGE', payload: "코로나 예방방법" });
     return (
         <div className='prevent'>
@@ -17,9 +55,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>-COVID-19백신 맞기</h3>
                 </div>
-                <img className='imgbox' src='/img/vaccine-5926664_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/syringe-5882593_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/medical-5835701_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre1_1} alt='#'></img>
+                <img className='imgbox' src={pre1_2} alt='#'></img>
+                <img className='imgbox' src={pre1_3} alt='#'></img>
                 <ul>
                     <li>COVID-19백신은 감염 예방에 효과적입니다. COVID-19백신은 중증질환, 입원, 사망 예방에 매우 효과적입니다.</li>
                     <li>COVID-19 유발 바이러스인 SARS-CoV-2의 확산을 늦추는 가장 좋은 방법은 백신 접종입니다.</li>
@@ -28,9 +66,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>-마스크 착용하기</h3>
                 </div>
-                <img className='imgbox' src='/img/mask.png' alt='#'></img>
-                <img className='imgbox' src='/img/mask2.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/mask3.jpg' alt='#'></img>
+                <img className='imgbox' src={pre2_1} alt='#'></img>
+                <img className='imgbox' src={pre2_2} alt='#'></img>
+                <img className='imgbox' src={pre2_3} alt='#'></img>
                 <ul>
                     <li>
                         마스크는 중요한 공중보건 도구이며 어떤 마스크든 착용하는 것이 마스크가 없는 것보다는 낫다는 점을 명심하세요.
@@ -54,9 +92,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>-다른 사람과 6피트 거리두기</h3>
                 </div>
-                <img className='imgbox' src='/img/covid-6020235_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/social-distancing-4992164_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/social-4954208_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre3_1} alt='#'></img>
+                <img className='imgbox' src={pre3_2} alt='#'></img>
+                <img className='imgbox' src={pre3_3} alt='#'></img>
                 <ul>
                     <li>
                         집 안에서: 가능하면 감염자와 밀접 접촉을 피하세요. 가능하면 감염자와 다른 가족 구성원 간 6피트의 거리를 유지하세요.
@@ -71,9 +109,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>환기가 잘 되지 않는 장소와 군중 피하기</h3>
                 </div>
-                <img className='imgbox' src='/img/audience-1866738_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/audience-1853662_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/concert-1129966_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre4_1} alt='#'></img>
+                <img className='imgbox' src={pre4_2} alt='#'></img>
+                <img className='imgbox' src={pre4_3} alt='#'></img>
                 <ul>
                     <li>실내에 들어가면 되도록 창문과 문을 열어 신선한 공기를 유입하세요.</li>
                     <li>COVID-19 중증 질환 고위험군에 속하는 사람은 사람이 많이 붐비는 장소와 실외로부터 신선한 공기가 유입되지 않는 실내 장소를 피하세요.</li>
@@ -82,9 +120,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>바이러스 전파 방지를 위한 검사</h3>
                 </div>
-                <img className='imgbox' src='/img/coronavirus-5739918_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/rapid-antigen-test-6961674_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/rapid-antigen-test-6480437_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre5_1} alt='#'></img>
+                <img className='imgbox' src={pre5_2} alt='#'></img>
+                <img className='imgbox' src={pre5_3} alt='#'></img>
                 <ul>
                     <li>
                         다양한 검사 유형 중에서 선택할 수 있습니다.
@@ -110,9 +148,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>손을 자주 씻어주세요</h3>
                 </div>
-                <img className='imgbox' src='/img/hand-washing-4818792_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/soap-dispenser-2337697_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/hands-2238235_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre6_1} alt='#'></img>
+                <img className='imgbox' src={pre6_2} alt='#'></img>
+                <img className='imgbox' src={pre6_3} alt='#'></img>
                 <ul>
                     <li>
                         물과 비누로 20초 이상 손씻기를 자주 하고 특히 공공 장소를 방문했거나 코를 풀고, 기침과 재채기를 한 후에는 꼭 씻어야 합니다.
@@ -155,9 +193,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>청소 및 소독</h3>
                 </div>
-                <img className='imgbox' src='/img/hand-disinfection-4954840_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/vacuum-cleaner-268179_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/coronavirus-4982040_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre7_1} alt='#'></img>
+                <img className='imgbox' src={pre7_2} alt='#'></img>
+                <img className='imgbox' src={pre7_3} alt='#'></img>
                 <ul>
                     <li>
                         자주 접촉하는 표면을 정기적으로 또는 필요에 따라 청소하고, 집에 방문자가 출입한 후에도 청소하세요.
@@ -175,9 +213,9 @@ const Prevent = () => {
                 <div className='colorbox'>
                     <h3>매일 자신의 건강 상태를 모니터하기</h3>
                 </div>
-                <img className='imgbox' src='/img/space-center-693251_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/blood-pressure-1584223_1920.jpg' alt='#'></img>
-                <img className='imgbox' src='/img/blood-pressure-monitor-1749577_1920.jpg' alt='#'></img>
+                <img className='imgbox' src={pre8_1} alt='#'></img>
+                <img className='imgbox' src={pre8_2} alt='#'></img>
+                <img className='imgbox' src={pre8_3} alt='#'></img>
                 <ul>
                     <li>증상 여부에 주의
                         <ul>
@@ -210,14 +248,14 @@ const Prevent = () => {
 
                     <div className="bottom_post">
                         <Link to="/manage">
-                            <img className="phoneImage" alt="iPhone_01" src="img/ManageMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={current_l} />
                             <a className='phoneImage_a'>코로나 확진 후 관리</a>
                         </Link>
 
 
 
                         <Link to="/Hospital">
-                            <img className="phoneImage" alt="iPhone_01" src="img/HospitalMain.jpg" />
+                            <img className="phoneImage" alt="iPhone_01" src={current_l2} />
                             <a className='phoneImage_a'>인근 병원 찾기</a>
                         </Link>
                     </div>

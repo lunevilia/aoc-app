@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export default function reducer(currentState, action) {
     // 현재 state 값이 정의되지 않았으면 기본 state 값 변환
@@ -31,12 +31,13 @@ export default function reducer(currentState, action) {
     if (action.type === "TOTAL") {
         newState.crtTotal = action.payload;
     }
-    if (action.type === "PAGE") {
-        newState.LeftTitle = action.payload;
-    }
     if (action.type === "PAGEImg") {
         newState.LeftImgSrc = action.payload;
     }
+    if (action.type === "PAGE") {
+        newState.LeftTitle = action.payload;
+    }
+
     if (action.type === "CrtMapState") {
         newState.mainCrtMap = action.payload;
     }

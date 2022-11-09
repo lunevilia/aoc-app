@@ -1,35 +1,43 @@
+/* current and MaskGuide css */
+
 .MainContent {
     width: 768px;
     margin-top: 60px;
-    display:flex;
+    display: flex;
     background: rgb(255, 254, 243);
     padding: 50px 0;
 }
+
 .MainContent svg {
     height: 300px;
     width: 400px;
 }
+
 .MainContent a {
     text-decoration: none;
     color: rgb(139, 139, 139);
 }
+
 .Leftside-left {
     width: 384px;
     text-align: center;
     margin-left: 10px;
     border-right: 2px solid rgb(211, 209, 182);
 }
+
 .Leftside-right {
     width: 384px;
     text-align: center;
-    float:right;
+    float: right;
 }
+
 .mainCurrentDiv {
     width: 100%;
 }
+
 .mainCurrentDiv p {
     background-color: white;
-    border: 4px solid  rgb(255, 189, 145);
+    border: 4px solid rgb(255, 189, 145);
     color: rgb(77, 77, 77);
     border-radius: 10px;
     display: inline-block;
@@ -38,19 +46,23 @@
     font-size: large;
     font-weight: bold;
 }
-.left-main-prevent div:nth-child(5){
+
+.left-main-prevent div:nth-child(5) {
     text-align: right;
     margin-right: 10px;
-    border-bottom:  2px solid rgb(211, 209, 182);
+    border-bottom: 2px solid rgb(211, 209, 182);
 }
+
 .left-main-guide div:nth-child(5) {
     text-align: right;
     margin-right: 10px;
 }
+
 path {
-    fill : rgb(214, 214, 214);
+    fill: rgb(214, 214, 214);
     stroke: black;
 }
+
 path:hover {
     fill: rgb(247, 139, 139);
     stroke: black;
@@ -65,16 +77,18 @@ svg {
     border: 8px solid rgb(153, 178, 183);
     background: white;
 }
+
 .current {
     padding: 35px;
 }
+
 .currentDiv {
     display: flex;
     justify-content: space-around;
     padding: 30px;
 }
 
-.currentDiv > div {
+.currentDiv>div {
     flex: 1;
     width: 200px;
     border: 3px solid black;
@@ -83,10 +97,12 @@ svg {
     background: white;
     font-weight: bold;
 }
+
 .currentDiv div:first-child p:not(:first-child) {
     color: rgb(115, 115, 255);
     font-size: 25px;
 }
+
 .currentDiv div:not(:first-child) p:not(:first-child) {
     color: rgb(255, 124, 115);
     font-size: 25px;
@@ -94,7 +110,7 @@ svg {
 
 
 .currentDiv hr {
-    width:100px;
+    width: 100px;
 }
 
 .current h2 {
@@ -111,7 +127,7 @@ svg {
     padding: 35px;
 }
 
-.maskGuide h2{
+.maskGuide h2 {
     text-align: center;
 }
 
@@ -119,7 +135,7 @@ svg {
     width: 300px;
     margin: 30px auto 0 auto;
     padding: 10px;
-    border: 4px solid rgb(255, 99, 100);
+    border: 7px solid rgb(255, 205, 135);
     background: white;
     border-radius: 10px;
 }
@@ -131,14 +147,14 @@ svg {
 
 .maskChildDiv {
     flex: 1;
-    border:4px solid rgb(255, 99, 100);
+    border: 6px solid rgb(255, 205, 135);
     border-radius: 10px;
     margin: 20px;
-    background-color: rgb(255, 244, 242);
+    background-color: rgb(255, 251, 244);
 
 }
 
-.maskImg{
+.maskImg {
     width: 250px;
     height: 150px;
 }
