@@ -1,7 +1,6 @@
 ## 코로나 관련정보를 간략하게 정리한 웹 사이트
  
- 개발 프레임워크 : React
-
+ 개발 프레임워크 : React <br>
  언어 : HTML5, js, css
 <br>
 <h3 align="center">[[홈페이지]]</h3>
@@ -41,8 +40,8 @@
 <hr>
 # aoc ( all of covid-19 )
 <br><br>
- 개발 프레임워크 : React
- 언어 : HTML5, js, css
+ 개발 프레임워크 : React <br>
+ 언어 : HTML5, js, css <br><br>
  
  메인 개발자 : 고가영
   - 코로나 현항 공공데이터 신청 및 적용
