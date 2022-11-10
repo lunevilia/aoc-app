@@ -7,7 +7,9 @@
 <p align="center">
 <img alt="imagestory" src="https://github.com/lunevilia/aoc19-app/blob/master/aocIMG/aoc_main.png?raw=true"/>
 </p>
-<span style = "margin-bottom : 30px background-colod: black;" />
+
+<span style = "margin-bottom : 30px; background-colod: black;" />
+
 <h3 align="center">[[현황페이지]]</h3>
 <p align="center">
 <img alt="imagestory" src="https://github.com/lunevilia/aoc19-app/blob/master/aocIMG/aoc_current.png?raw=true"/>
